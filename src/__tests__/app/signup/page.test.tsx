@@ -22,7 +22,7 @@ test("validates email and password fields", () => {
 
 // integration test - form submit
 beforeEach(() => {
-  global.fetch = jest.fn((input: RequestInfo, init?: RequestInit) =>
+  global.fetch = jest.fn(() =>
     Promise.resolve(
       new Response(JSON.stringify({ success: true }), {
         status: 201,
