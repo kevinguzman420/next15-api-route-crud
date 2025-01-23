@@ -2,7 +2,6 @@ import SigninPage from "@/app/signin/page";
 import { act, fireEvent, render, screen } from "@testing-library/react";
 import { loginSchema } from "@/schemas/login.schema";
 import { redirect } from "next/navigation";
-import { axe, toHaveNoViolations } from "jest-axe";
 
 // render test - test if the page renders correctly
 test("renders sign-in form with email and password fields", () => {
